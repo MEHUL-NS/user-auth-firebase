@@ -3,12 +3,12 @@ import {getAuth, GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
-  authDomain: "authtrial-41854.firebaseapp.com",
-  projectId: "authtrial-41854",
-  storageBucket: "authtrial-41854.appspot.com",
-  messagingSenderId: "53661592706",
-  appId: "1:53661592706:web:609631e51a2bc4b19b189b",
-  measurementId: "G-CKP5JD8MXN",
+  authDomain: process.env.API_authDomain,
+  projectId: process.env.Project_ID,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.senderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 const app = initializeApp(firebaseConfig);
